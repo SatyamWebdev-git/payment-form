@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://127.0.0.1:5500/payment%20form.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+    <link rel="stylesheet" href="./payment form_files/style.css">
+</head>
+<body>
+    <div class="container">
+    <form action="file:///C:/Users/dell%20premium%20series/Desktop/new%20WEB%20Site/form_info.html?name=SatyamAgrawal&amp;Gender=on&amp;Address=fatehpur+sikri&amp;Email=agarwalsatyam195%40gmail.com&amp;Pincode=283110&amp;Card+Type=Master&amp;Card+Number=7554543433&amp;Expiration+Date=2025-08-24&amp;CVV=satyajsasj2saj">
+    <h1 class="main_heading">Payment form</h1>
+    <hr width="100%" color="black"><h2>Contact Information</h2>
+    <p>Name: * <input type="text" name="name" placeholder="your name" required=""></p>
+    <p>
+    </p><fieldset>
+        <legend>Gender</legend>
+    Male: * <input type="radio" name="Gender" required="" id="Male" value="Male">female:<input type="radio" name="Gender" id="Female" value="female"><p></p>
+    </fieldset>
+    <p></p>
+    <p>Address : * <textarea name="Address" placeholder="Enter your Address" required="Address" cols="50" rows="8"></textarea></p>
+    <p>Email: * <input type="Email" name="Email" placeholder="xyz123@gmail.com" required="" id="Email"></p>
+    <p>Pincode: * <input type="number" name="Pincode" placeholder="112233" required="Pincode"></p>
+    <h2>Payment method</h2>
+    <p>Card Type: *
+    <select name="Card Type" required="" id="Card type">
+        <option value="">--Select a Card type--</option>
+        <option value="Visa">Visa</option>
+        <option value="Master">Master</option>
+        <option value="Rupay">Rupay</option>
+    </select>
+    </p><p> Card Number: * <input type="number" name="Card Number" placeholder="225362353232" required="" id="Card Number"></p>
+    <p>Expiration Date: * <input type="date" name="Expiration Date" required="" id="Expiration Date"></p>
+    <p>CVV: * <input type="password" name="CVV" placeholder="password" required="" id="CVV"></p>
+    <input type="submit" value="Pay Now" id="Pay Now">
+</form>
+</div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
